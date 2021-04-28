@@ -1,2 +1,2 @@
 # Unlock
-Unlock Protocol plugin for Known
+Unlock plugin for Known
