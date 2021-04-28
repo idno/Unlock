@@ -10,6 +10,9 @@ A Known plugin that allows you to protect content using the [Unlock Protocol](ht
 ## Manual Installation
 
 * Drop the "Unlock" folder into the "IdnoPlugins" folder of your Known installation.
+
+## Activation
+
 * Log into Known and click on Administration.
 * Click "enable" next to the Unlock plugin.
 
