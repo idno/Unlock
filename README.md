@@ -5,6 +5,7 @@ A Known plugin that allows you to protect content using the [Unlock Protocol](ht
 ## Composer Installation (preferred)
 
 * Type `composer require idno/unlock` from your Known root folder.
+* Type `composer install`.
 
 ## Manual Installation
 
