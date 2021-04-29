@@ -30,13 +30,15 @@ class Main extends Plugin
             $entity = $event->data()['object'];
             $page = Idno::site()->currentPage();
 
-            $unlockLock = $page->getInput('unlockLock', '');
-            if ($entity->unlockLock != $unlockLock) {
-                $entity->unlockLock = $unlockLock;
-            }
-            $unlockTeaser = $page->getInput('unlockTeaser', '');
-            if ($entity->unlockTeaser != $unlockTeaser) {
-                $entity->unlockTeaser = $unlockTeaser;
+            if ($page) {
+                $unlockLock = $page->getInput('unlockLock', '');
+                if ($entity->unlockLock != $unlockLock) {
+                    $entity->unlockLock = $unlockLock;
+                }
+                $unlockTeaser = $page->getInput('unlockTeaser', '');
+                if ($entity->unlockTeaser != $unlockTeaser) {
+                    $entity->unlockTeaser = $unlockTeaser;
+                }
             }
             return $entity;
         });
